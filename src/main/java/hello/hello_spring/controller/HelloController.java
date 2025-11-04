@@ -24,6 +24,7 @@ public class HelloController {
     @GetMapping("hello-string")
     @ResponseBody
     public String helloString(@RequestParam("name") String name) {
+
         return "hello " + name;
     }
 
@@ -39,10 +40,12 @@ public class HelloController {
         private String name;
 
         public String getName() {
+
             return name;
         }
 
         public void setName(String name) {
+
             this.name = name;
         }
     }
